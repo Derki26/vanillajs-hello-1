@@ -15,16 +15,26 @@
   </head>
   <body>
     <div class="container-fluid text-center">
-      <!--
       <h1 class="mt-5">Hello Rigo!</h1>
       <img src="./assets/img/rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">If this text is <b>not</b> centered and <b>yellow</b>, you probably have an error</p>
+      <p class="alert alert-warning mt-4">
+        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
+        an error
+      </p>
       <script type="text/javascript">
-                
-          let posicion = Math.floor(Math.random()*3);
-          let d = new Date();
-          document.body.innerHTML = "<h1>Time right now is:  " + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds()+"</h1>" + 
-                                    "<h1>item:  " + posicion + "</h1>";
+        let posicion = Math.floor(Math.random() * 3);
+        let d = new Date();
+        document.body.innerHTML =
+          "<h1>Time right now is:  " +
+          d.getHours() +
+          ":" +
+          d.getMinutes() +
+          ":" +
+          d.getSeconds() +
+          "</h1>" +
+          "<h1>item:  " +
+          posicion +
+          "</h1>";
       </script>
 
       <p id="excuse">My dog eat my homework</p>
@@ -33,21 +43,24 @@
         <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
       </div>
     </div>
-    -->
-      <script type="text/javascript">
-          function frase(){
-            let who = ['the dog','my granma','his turtle','my bird'];
-            let what = ['eat','pissed','crushed','broked'];
-            let when = ['before the class','right in time','when I finished','during my lunch','while I was praying'];
+    <script type="text/javascript">
+      function frase() {
+        let who = ["the dog", "my granma", "his turtle", "my bird"];
+        let what = ["eat", "pissed", "crushed", "broked"];
+        let when = [
+          "before the class",
+          "right in time",
+          "when I finished",
+          "during my lunch",
+          "while I was praying"
+        ];
 
-            let posicion = Math.floor(Math.random()*4);
+        let posicion = Math.floor(Math.random() * 4);
 
-            return who[posicion] + ' ' + what[posicion] + ' ' + when[posicion];
-          }
+        return who[posicion] + " " + what[posicion] + " " + when[posicion];
+      }
 
-
-          document.body.innerHTML = "<h1>Mi excusa:  " + frase() + "</h1>";
-      </script>
-
+      document.body.innerHTML = "<h1>Mi excusa:  " + frase() + "</h1>";
+    </script>
   </body>
 </html>
